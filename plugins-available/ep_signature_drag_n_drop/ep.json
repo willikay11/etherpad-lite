@@ -1,0 +1,10 @@
+{
+  "parts": [
+    {
+      "name": "feedback",
+      "hooks": {
+        "eejsBlock_editorContainerBox": "ep_signature_drag_n_drop/dragAndDrop"
+      }
+    }
+  ]
+}

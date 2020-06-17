@@ -1,0 +1,26 @@
+{
+  "name": "ep_signature_drag_n_drop",
+  "version": "0.0.1",
+  "description": "A plugin to enable custom drag and drop for signatures application",
+  "contributors": [{
+    "name": "William Kamau",
+    "email": "willikay11@gmail.com",
+    "url": "https://github.com/willikay11"
+  }],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/willikay11"
+  },
+  "keywords": [
+    "drag-and-drop"
+  ],
+  "author": "William Kamau",
+  "license": "ISC",
+  "dependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
