@@ -1,0 +1,31 @@
+<div class="signature-content-container">
+    <div class="content">
+        <div id='item-1' draggable='true' class="draggable-item">Text Block</div>
+        <div id='item-1' draggable='true' class="draggable-item">Table Block</div>
+    </div>
+</div>
+
+
+<style type="text/css">
+    .signature-content-container {
+        height: 100%;
+        width: 450px;
+        background: #ffffff
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .draggable-item {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        border: 1px dashed #6DB65B;
+        margin: 5px;
+        min-height: 50px;
+    }
+</style>
