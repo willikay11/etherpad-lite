@@ -1,0 +1,10 @@
+{
+  "parts": [
+    {
+      "name": "feedback",
+      "hooks": {
+        "eejsBlock_editbarMenuRight": "ep_feedback/feedback"
+      }
+    }
+  ]
+}
