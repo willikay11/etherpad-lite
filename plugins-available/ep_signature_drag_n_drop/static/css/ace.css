@@ -1,0 +1,14 @@
+.pad-signature {
+    border: 1px #6DB65B solid;
+    padding: 5px;
+    position: absolute;
+    z-index: 1000;
+    background-color: #F0F7EE;
+    min-width: 200px;
+    border-radius: 3px;
+}
+
+.pad-signature:hover {
+    border: 2px #6DB65B solid;
+    background-color: #ffffff;
+}

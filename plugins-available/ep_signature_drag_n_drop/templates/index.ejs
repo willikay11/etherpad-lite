@@ -1,7 +1,16 @@
 <div class="signature-content-container">
     <div class="content">
-        <div id='item-1' draggable='true' class="draggable-item">Text Block</div>
-        <div id='item-1' draggable='true' class="draggable-item">Table Block</div>
+        <div id="signature" draggable='true' ondragstart="onDragStart(event)" class="draggable-item">Signature</div>
+        <div id="date" draggable='true' ondragstart="onDragStart(event)" class="draggable-item">Date</div>
+    </div>
+
+    <div class="content">
+        <div id="check-box" draggable='true' ondragstart="onDragStart(event)" class="draggable-item">Check Box</div>
+        <div id="dropdown" draggable='true' ondragstart="onDragStart(event)" class="draggable-item">Drop down</div>
+    </div>
+
+    <div class="content">
+        <div id="text-field" draggable='true' ondragstart="onDragStart(event)" class="draggable-item">Text Field</div>
     </div>
 </div>
 
@@ -29,3 +38,14 @@
         min-height: 50px;
     }
 </style>
+
+<script type="text/javascript">
+    function onDragStart(event) {
+        event.dataTransfer.setData('text/html', '');
+        // add the id to local storage under currentItemDragged
+        const storage = window.localStorage;
+        storage.setItem('currentItemDragged', event.target.id);
+        const draggableElement = document.getElementById(event.target.className);
+        event.currentTarget.style.backgroundColor = 'yellow';
+    };
+</script>
